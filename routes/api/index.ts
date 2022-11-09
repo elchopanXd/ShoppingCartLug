@@ -1,15 +1,15 @@
 import expressRoutes, { Router } from "express";
-import productosRoutes from "./Productos";
-import carritodetailsRoutes from "./Carrito-Details";
-import carritoRoutes from "./Carrito"
+import productosRoutes from "./products";
+import carritodetailsRoutes from "./cart-detail";
+import carritoRoutes from "./cart"
 
 //Creación de variable para enrutar los distintos modelos 
 //Esto serán las rutas donde nos podremos comunicar con la API
 const router = Router();
 
-router.use("/productos", productosRoutes)
-router.use("/carrito-details", carritodetailsRoutes)
-router.use("/carritolist", carritoRoutes)
+router.use("/products", productosRoutes)
+router.use("/cart-details", carritodetailsRoutes)
+router.use("/cartList", carritoRoutes)
 
 
 export default router;

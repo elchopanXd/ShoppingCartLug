@@ -1,11 +1,11 @@
 import { Router } from "express";
 import { resolveModuleNameFromCache } from "typescript";
-import carritoController from "../../Controllers/Carrito";
+import cartController from "../../Controllers/cart";
 
 const router = Router();
 
 //Get
-router.get("/", carritoController.get);
+router.get("/", cartController.get);
 
 
 export default router;

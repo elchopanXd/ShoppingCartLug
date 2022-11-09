@@ -7,19 +7,19 @@
 	},
 	"item": [
 		{
-			"name": "GetCarritoList",
+			"name": "Get Cart List",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:4000/ShoppingCart/carritolist",
+					"raw": "localhost:4000/ShoppingCart/cartList",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
 						"ShoppingCart",
-						"carritolist"
+						"cartList"
 					]
 				}
 			},

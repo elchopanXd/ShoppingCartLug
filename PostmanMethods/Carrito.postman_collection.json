@@ -7,32 +7,32 @@
 	},
 	"item": [
 		{
-			"name": "getCarrito LISTADO COMPLETO",
+			"name": "Get Complete Cart List ",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:4000/ShoppingCart/carrito-details",
+					"raw": "localhost:4000/ShoppingCart/cart-details",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
 						"ShoppingCart",
-						"carrito-details"
+						"cart-details"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "postProductosCarrito",
+			"name": "Post Cart Products",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Nombre_Producto\": \"dd\",\r\n    \"Cantidad\": 8\r\n}",
+					"raw": "{\r\n    \"name_product\": \"??\",\r\n    \"quantity\": ??\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -40,47 +40,47 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:4000/ShoppingCart/carrito-details",
+					"raw": "localhost:4000/ShoppingCart/cart-details",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
 						"ShoppingCart",
-						"carrito-details"
+						"cart-details"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "deleteProductos por Parametros",
+			"name": "Delete Products by Parameters",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:4000/ShoppingCart/carrito-details/Computadoras",
+					"raw": "localhost:4000/ShoppingCart/cart-details/NombreDelProductaEliminar",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
 						"ShoppingCart",
-						"carrito-details",
-						"Computadoras"
+						"cart-details",
+						"NombreDelProductaEliminar"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "putProducto por parametros",
+			"name": "Put Product by Parameters",
 			"request": {
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Nombre_Producto\": \"Computadoras\",\r\n    \"Cantidad\": 9\r\n}",
+					"raw": "{\r\n    \"name_product\": \"??\",\r\n    \"quantity\": ??\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -88,14 +88,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:4000/ShoppingCart/carrito-details",
+					"raw": "localhost:4000/ShoppingCart/cart-details",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
 						"ShoppingCart",
-						"carrito-details"
+						"cart-details"
 					]
 				}
 			},
